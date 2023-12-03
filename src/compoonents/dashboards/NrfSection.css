@@ -1,0 +1,18 @@
+#main{
+    height: 350px;
+    display: flex;
+    justify-content: space-around;
+    margin-left: 40px;
+    margin-top: 40px;
+    border-top: 1px rgb(194, 194, 194) solid;
+}
+#div_left{
+    object-fit: cover;
+
+}
+#div_right{
+    margin-top: 8px;
+}
+.image{
+    height: 350px;
+}

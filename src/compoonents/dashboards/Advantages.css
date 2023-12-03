@@ -1,0 +1,22 @@
+#adv{
+    margin-top: 25px;
+    height: 55px;
+    padding-top: 8px;
+    font-size: 1.4rem;
+    font-weight: 700;
+    border-top: 1px rgb(255, 170, 0) solid;
+    border-bottom: 1px rgb(255, 170, 0) solid;
+}
+#parent_div{
+    background-color: #d0d6e2;
+    display: flex;
+    justify-content: space-around;
+    padding-left: 150px;
+    padding-right: 150px;
+    margin-top: 10px;
+}
+#parent2_div{
+    display: flex;
+    justify-content: space-around;    
+    margin-top: 10px;
+}

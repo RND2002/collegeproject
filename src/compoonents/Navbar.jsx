@@ -154,8 +154,8 @@ export default function Navbar() {
         </Dialog>
       </Transition.Root>
 
-      <header className="relative bg-blue-600 z-500">
-        <div className="flex justify-evenly h-15 items-center  bg-yellow-800 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
+      <header className="relative bg-blue-800 z-500">
+        <div className="flex justify-evenly h-15 items-center  bg-yellow-700 px-4 text-sm font-medium text-white sm:px-6 lg:px-8">
           {/* Made with love by CodeSite ❤️ */}
         
             <div className="flex cursor-pointer"><span className="mr-1 mt-1"><MdWifiCalling /></span><span>Admission Helpline</span></div>
@@ -168,135 +168,7 @@ export default function Navbar() {
           </div>
         
 
-        <nav
-          aria-label="Top"
-          className="mx-auto max-w-7xl px-4 sm:px-6 lg:px-8"
-        >
-          <div className="border-b border-gray-200">
-            <div className="flex h-32 items-center">
-              <button
-                type="button"
-                className="relative rounded-md bg-white p-2 text-gray-400 lg:hidden"
-                onClick={() => setOpen(true)}
-              >
-                <span className="absolute -inset-0.5" />
-                <span className="sr-only">Open menu</span>
-                <Bars3Icon className="h-6 w-6" aria-hidden="true" />
-              </button>
-
-              {/* Logo */}
-              <div className="ml-4 flex lg:ml-0">
-                <a href="#">
-                  <span className="sr-only">Your Company</span>
-                  <img
-                    className="h-16 w-auto"
-                    src={KitLogo}
-                    alt=""
-                  />
-                </a>
-              </div>
-
-              {/* Flyout menus */}
-              <Popover.Group className="hidden lg:ml-8 lg:block lg:self-stretch">
-                <div className="flex h-full space-x-8">
-                
-
-                  {navigation.pages.map((page) => (
-                    <a
-                      key={page.name}
-                      href={page.href}
-                      className="flex items-center text-sm font-medium text-white hover:text-gray-800"
-                    >
-                      {page.name}
-                    </a>
-                  ))}
-                </div>
-              </Popover.Group>
-
-              <div className="ml-auto flex items-center">
-                <div className="hidden lg:flex lg:flex-1 lg:items-center lg:justify-end lg:space-x-6">
-                  {
-                    true ? (
-                      <div>
-                        <Avatar 
-                        className="text-white"
-                        onClick={handleUserClick}
-                        aria-controls={open ? "basic-menu":undefined}
-                        aria-haspopup="true"
-                        aria-expended={open ? "true" :undefined}
-                        //onClick={handleUserClick}
-                        sx={{
-                          bgcolor:"deepPurpule[500]"
-                          ,color:"white",
-                          cursor:"pointer"
-                        }}
-                        >
-                          R
-                        </Avatar>
-                        {/* <Button id="basic-button" aria-controls={open? "basic-menu":undefined}
-                        aria-haspopup="true"
-                        aria-expended={open ? "true" :undefined}>
-                          DashBoard
-                        </Button> */}
-
-                        <Menu
-                        id="basic-menu"
-                        anchorEl={anchorEl}
-                        open={openUserMenu}
-                        onClose={handleCloseUserMenu}
-                        MenuListProps={{
-                          "aria-labbeledBy":"basic-button",
-                        }}
-                        >
-                          <MenuItem onClick={handleCloseUserMenu}>
-                                Profile
-                          </MenuItem>
-                        
-                          <MenuItem>
-                          MyOrders
-                          </MenuItem>
-                          <MenuItem>
-                          Log-Out
-                          </MenuItem>
-                        </Menu>
-                      </div>
-                    ):(
-                      <Button onClick={handleOPen}
-                      className="text-sm font-medium text-grey-700 hover:text-grey-800">SignIn</Button>
-                    )
-                  }
-                 
-                </div>
-
-                {/* Search */}
-                <div className="flex lg:ml-6">
-                  <a href="#" className="p-2 text-gray-400 hover:text-gray-500">
-                    <span className="sr-only">Search</span>
-                    <MagnifyingGlassIcon
-                      className="h-6 w-6"
-                      aria-hidden="true"
-                    />
-                  </a>
-                </div>
-
-                {/* Cart */}
-                {/* <div className="ml-4 flow-root lg:ml-6">
-                  <a href="#" className="group -m-2 flex items-center p-2">
-                    <ShoppingBagIcon
-                      className="h-6 w-6 flex-shrink-0 text-gray-400 group-hover:text-gray-500"
-                      aria-hidden="true"
-                    />
-                    <span className="ml-2 text-sm font-medium text-gray-700 group-hover:text-gray-800">
-                      0
-                    </span>
-                    <span className="sr-only">items in cart, view bag</span>
-                  </a>
-                </div> */}
-                <button className="btn btn-warning" >Login/Signup</button>
-              </div>
-            </div>
-          </div>
-        </nav>
+        
       </header>
     </div>
   );

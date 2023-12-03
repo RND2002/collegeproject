@@ -1,0 +1,90 @@
+.navbar{
+    height: 103px;
+    background-color: #05084a;
+    color:white;
+    display:flex;
+    align-items:center;
+    justify-content: space-evenly;
+}
+
+.kitlogocontainer{
+    height: 93px;
+    width: 379.75px;
+    display: flex;
+    justify-content: center;
+}
+
+.kitlogo{
+    height: 82.28px;
+    width: 246.84px;
+    background-image: url("C:\Users\aryan\Desktop\Dev\kashiit\src\assets\KIT-Logo.webp");
+    background-size: cover;
+}
+
+.menubar{
+    height: 93px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.options{
+    height: 56px;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+}
+
+.options span{
+    height: 22px;
+    display: flex;
+    align-items: center;
+    padding-left: 6px;
+    padding-right: 6px;
+    margin: 0px;
+    font-family: Roboto, sans-serif;
+    font-size: 13px;
+    font-weight: 510;
+}
+
+.naaclogocontainer{
+    width: 222.74px;
+    height: 93px;
+    display: flex;
+    justify-content: center;
+}
+
+.naaclogo{
+    height: 93px;
+    width: 140px;
+    background-image: url("C:\Users\aryan\Desktop\Dev\kashiit\src\assets\naac.png");
+    background-size: cover;
+}
+
+.mainmenubarout{
+    display: flex;
+}
+
+.mainmenubar{
+    height: 82px;
+    width: 90%;
+    background-color: #05084a;
+    display: flex;
+    justify-content: center;
+}
+
+.mainmenubar p{
+    width: 125px;
+    color: white;
+    padding-left: 10px;
+    padding-right: 10px;
+    padding-top: 5px;
+    padding-bottom: 5px;
+}
+
+.phone{
+    height: 82px;
+    width: 10%;
+    background-color: #05084a;
+}
