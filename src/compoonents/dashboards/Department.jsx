@@ -10,7 +10,7 @@ const Department = () => {
         <div className='flex flex-wrap m-10 mt-12 mb-12'>
          {DepartmentData.map((item)=>(
           
-           <div className='border border-gray-500 rounded-lg max-h-full w-[24rem] m-2'>
+           <div className='border border-gray-500 rounded-lg max-h-full w-[24rem] ml-24 mt-5'>
           <div className='relative'>
           <img className='border border-black rounded-lg blur-[2px] ' src={item.image} alt=''/>
           <div className='flex flex-col'>

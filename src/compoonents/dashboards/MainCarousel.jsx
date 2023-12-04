@@ -17,6 +17,7 @@ const MainCarousel = () => {
     
     items={items}
     disableButtonControls
+    disableButtonsControls
     autoPlay
     autoPlayInterval={2000} // Adjust the value here to control the sliding speed
     infinite
